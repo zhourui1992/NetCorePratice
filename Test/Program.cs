@@ -8,6 +8,8 @@ namespace Test
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("321");
+
+            Console.WriteLine(12345);
         }
     }
 }
