@@ -6,9 +6,9 @@ namespace Jerry.Prateice.Autofac.Services
 {
     public class ServiceB : IServiceB
     {
-        private ILogger _logger;
+        private ILogger<ServiceB> _logger;
 
-        public ServiceB(ILogger logger)
+        public ServiceB(ILogger<ServiceB> logger)
         {
             _logger = logger;
         }

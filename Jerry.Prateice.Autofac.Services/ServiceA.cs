@@ -1,18 +1,19 @@
-﻿using Jerry.Prateice.EF.DataBase;
+﻿using Jerry.Prateice.Autofac.IServices;
+using Jerry.Prateice.EF.DataBase;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Jerry.Prateice.Autofac.IServices
+namespace Jerry.Prateice.Autofac.Services
 {
-    class ServiceA : IServiceA
+    public class ServiceA : IServiceA
     {
-        private ILogger _logger;
+        private ILogger<ServiceA> _logger;
         private LocalDbContext _db;
         private IServiceB _serviceB;
-        public ServiceA(ILogger logger, LocalDbContext db, IServiceB serviceB)
+        public ServiceA(ILogger<ServiceA> logger, LocalDbContext db, IServiceB serviceB)
         {
             _logger = logger;
             _db = db;
