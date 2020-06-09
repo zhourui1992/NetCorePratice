@@ -7,7 +7,7 @@ namespace Test
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("321");
+            Console.WriteLine("3211");
 
             Console.WriteLine(12345);
         }
